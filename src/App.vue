@@ -10,6 +10,5 @@
 
 <style>
 #app {
-  /* background-color: #100e17; */
 }
 </style>

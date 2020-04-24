@@ -117,7 +117,7 @@ export default {
 				padding-top: 2px;
 				cursor: pointer;
 				transition: 0.2s all;
-				color: #c2c2c2;
+				color: #f25d8e;
 				&:hover {
 					transition: 0.2s all;
 					transform: scale(1.1);
@@ -149,10 +149,11 @@ export default {
 			// filter: drop-shadow(0 0 5px crimson);
 			justify-content: space-evenly;
 			&::after {
-				content: "角色距离差:";
+				content: "相邻角色距离差:";
 				position: absolute;
-				left: -90px;
+				left: -120px;
 				color: #00b6ff;
+				font-weight: bold;
 			}
 
 			.range-diff {
@@ -174,7 +175,7 @@ export default {
 			display: flex;
 			flex-flow: row-reverse nowrap;
 			align-items: center;
-			box-shadow: 0px 2px 5px black;
+			box-shadow: 0px 0px 2px black;
 			padding: 5px;
 
 			.single-result {
@@ -188,13 +189,13 @@ export default {
 				box-sizing: border-box;
 				cursor: pointer;
 				transition: 0.2s all;
-				filter: drop-shadow(0 0 2px #00b6ff);
+				filter: drop-shadow(0 0 4px #00b6ff);
 
 				&:not(:first-of-type) {
 					margin-right: 10px;
 				}
 				&:hover {
-					filter: drop-shadow(0 0 4px crimson);
+					filter: drop-shadow(0 0 6px crimson);
 					transition: 0.2s all;
 				}
 				img {
