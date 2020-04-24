@@ -139,7 +139,7 @@ export default {
 					white-space: nowrap;
 					font-size: 16px;
 					line-height: 16px;
-					padding: 2px 0px;
+					padding: 2px 4px;
 				}
 				.range {
 					padding: 2px 0px;
@@ -159,16 +159,18 @@ export default {
 		.range-indicator {
 			width: 80%;
 			max-width: 500px;
-			height: 20px;
-			line-height: 20px;
 			position: fixed;
 			bottom: 135px;
+			height: 26px;
 			left: 50%;
 			transform: translate(-50%, 0);
 			display: flex;
 			flex-flow: row-reverse nowrap;
-			background-color: rgba($color: #000000, $alpha: 0.5);
+			// background-color: rgba($color: #000000, $alpha: 0.5);
+			background-color: #00b6ff;
+			border: 2px solid white;
 			justify-content: space-evenly;
+			border-radius: 5px;
 			&::after {
 				content: "相邻角色距离差:";
 				position: absolute;
@@ -179,7 +181,12 @@ export default {
 
 			.range-diff {
 				color: white;
-				flex: 0 0 30px
+				flex: 0 0 30px;
+				font-weight: bold;
+				height: 26px;
+				line-height: 26px;
+				font-size: 16px;
+				vertical-align: middle;
 			}
 		}
 
