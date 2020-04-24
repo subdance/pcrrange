@@ -181,7 +181,7 @@ export default {
 			.single-result {
 				position: relative;
 				display: flex;
-				width: 95%;
+				width: 20%;
 				max-width: 100px;
 				max-height: 100px;
 				flex-flow: row nowrap;
