@@ -7,7 +7,7 @@
 				:key="index"
 				@click="push(item)"
 				>
-				<div>
+				<div class="avatar">
 					<img :src="item.avatar" alt="">
 				</div>
 				<div class="name">
@@ -113,12 +113,22 @@ export default {
 				width: 90px;
 				display: flex;
 				flex-flow: column nowrap;
-				border: 1px solid #f25d8e;
 				padding-top: 2px;
 				cursor: pointer;
 				transition: 0.2s all;
 				color: #f25d8e;
+				background-color: white;
+				padding: 4px 2px;
+				box-shadow: 2px 2px 2px grey;
+				
 				&:hover {
+				box-shadow:
+					0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+					0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+					0 12.5px 10px rgba(0, 0, 0, 0.035),
+					0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+					0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+					0 100px 80px rgba(0, 0, 0, 0.07);
 					transition: 0.2s all;
 					transform: scale(1.1);
 				}
@@ -127,9 +137,21 @@ export default {
 					text-overflow: ellipsis;
 					overflow: hidden;
 					white-space: nowrap;
+					font-size: 16px;
+					line-height: 16px;
+					padding: 2px 0px;
 				}
-				img {
-					width: 80px;
+				.range {
+					padding: 2px 0px;
+					line-height: 16px;
+				}
+				.avatar {
+
+					img {
+						width: 80px;
+						display: block;
+						margin: auto;
+					}
 				}
 			}
 		}
@@ -188,15 +210,15 @@ export default {
 				transition: 0.2s all;
 				filter: drop-shadow(0 0 4px #00b6ff);
 				border-radius: 0 0 5px 5px;
-				overflow: hidden;
-
+				// overflow: hidden;
 				&:not(:first-of-type) {
 					margin-right: 10px;
 				}
 				&:hover {
-					filter: drop-shadow(0 0 6px crimson);
+					// filter: drop-shadow(0 0 6px crimson);
 					transition: 0.2s all;
 				}
+
 				img {
 					width: 100%;
 					display: block;
@@ -210,7 +232,8 @@ export default {
 					color: white;
 					font-size: 13px;
 					line-height: 18px;;
-					background-color: rgba($color: #000000, $alpha: 0.5)
+					background-color: rgba($color: #000000, $alpha: 0.5);
+					overflow: hidden;
 				}
 			}
 
