@@ -146,7 +146,6 @@ export default {
 			display: flex;
 			flex-flow: row-reverse nowrap;
 			background-color: rgba($color: #000000, $alpha: 0.5);
-			// filter: drop-shadow(0 0 5px crimson);
 			justify-content: space-evenly;
 			&::after {
 				content: "相邻角色距离差:";
@@ -176,20 +175,20 @@ export default {
 			flex-flow: row-reverse nowrap;
 			align-items: center;
 			box-shadow: 0px 0px 2px black;
-			padding: 5px;
+			padding: 3px;
+			justify-content: space-evenly;
 
 			.single-result {
 				position: relative;
-				display: flex;
 				width: 20%;
 				max-width: 100px;
 				max-height: 100px;
-				flex-flow: row nowrap;
-				overflow: hidden;
 				box-sizing: border-box;
 				cursor: pointer;
 				transition: 0.2s all;
 				filter: drop-shadow(0 0 4px #00b6ff);
+				border-radius: 0 0 5px 5px;
+				overflow: hidden;
 
 				&:not(:first-of-type) {
 					margin-right: 10px;
@@ -200,17 +199,17 @@ export default {
 				}
 				img {
 					width: 100%;
-					max-width: 100px;
+					display: block;
 				}
 				.name-holder {
 					position: absolute;
 					bottom: 0px;
 					left: 0px;
 					width: 100%;
-					height: 20px;
+					height: 18px;
 					color: white;
-					font-size: 16px;
-					line-height: 20px;;
+					font-size: 13px;
+					line-height: 18px;;
 					background-color: rgba($color: #000000, $alpha: 0.5)
 				}
 			}
@@ -223,9 +222,18 @@ export default {
 		}
 		.result-holder {
 			max-height: 80px!important;
+			backdrop-filter: blur(0px)!important;
+			background-color: rgba($color: #000000, $alpha: 0.5)
 		}
 		.range-indicator {
 			bottom: 100px!important;
+		}
+		.single-result {
+			border: 1px solid #f25d8e;
+			filter: none!important;
+		}
+		.single-result:hover {
+			filter: none!important;
 		}
 	}
 </style>
