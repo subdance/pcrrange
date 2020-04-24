@@ -210,12 +210,11 @@ export default {
 				transition: 0.2s all;
 				filter: drop-shadow(0 0 4px #00b6ff);
 				border-radius: 0 0 5px 5px;
-				// overflow: hidden;
 				&:not(:first-of-type) {
 					margin-right: 10px;
 				}
 				&:hover {
-					// filter: drop-shadow(0 0 6px crimson);
+					filter: drop-shadow(0 0 6px crimson);
 					transition: 0.2s all;
 				}
 
