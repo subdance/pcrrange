@@ -1,2 +1,2 @@
 # pcr-range
-https://konfan.net/pcrrang-io/#/
+https://yuiyuan.xyz/pcrrang-io/#/
