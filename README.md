@@ -1,2 +1,2 @@
 # pcr-range
-https://yuiyuan.xyz/pcrrang-io/#/
+https://yuiyuan.xyz/pcrrange-io/#/
